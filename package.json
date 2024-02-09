@@ -4,7 +4,9 @@
   "description": "Metarhia example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.ts\""
   },
   "engines": {
     "node": "18 || 19 || 20"
