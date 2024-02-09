@@ -28,6 +28,9 @@ devDependencies:
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
+  eslint-config-metarhia:
+    specifier: ^8.2.2
+    version: 8.2.2(eslint-plugin-import@2.29.1)(eslint@8.56.0)
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
@@ -490,6 +493,17 @@ packages:
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-config-metarhia@8.2.2(eslint-plugin-import@2.29.1)(eslint@8.56.0):
+    resolution: {integrity: sha512-3jaPFa2XyzPBIG2BilGgc/iL3JwN54BaiKdlCDq6Odm9EagsStEx07lGETmH/b1sb7h2OYQRGUHewWmK2+XvPg==}
+    engines: {node: 16 || 18 || 20 || 21}
+    peerDependencies:
+      eslint: ^8.45.0
+      eslint-plugin-import: ^2.27.5
+    dependencies:
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(eslint@8.56.0)
     dev: true
 
   /eslint-config-prettier@9.1.0(eslint@8.56.0):

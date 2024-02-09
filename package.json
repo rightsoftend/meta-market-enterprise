@@ -2,11 +2,14 @@
   "name": "meta-market-enterprise",
   "version": "0.0.1",
   "description": "Metarhia example",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "npm run lint && tsc",
-    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.ts\"",
-    "fmt": "prettier --write \"**/*.js\" \"**/*.ts\""
+    "test": "npm run lint && npm run types && MODE=test node server.js",
+    "dotest": "npm run lint && npm run types && node server.js",
+    "types": "tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "db": "metasql c"
   },
   "engines": {
     "node": "18 || 19 || 20"
@@ -35,6 +38,7 @@
     "@types/pg": "^8.11.0",
     "@types/ws": "^8.5.10",
     "eslint": "^8.56.0",
+    "eslint-config-metarhia": "^8.2.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
