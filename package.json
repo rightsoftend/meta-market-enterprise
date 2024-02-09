@@ -1,0 +1,26 @@
+{
+  "name": "meta-market-enterprise",
+  "version": "0.0.1",
+  "description": "Metarhia example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18 || 19 || 20"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightsoftend/meta-market-enterprise.git"
+  },
+  "keywords": [
+    "metarhia",
+    "impress"
+  ],
+  "author": "Volodymyr Nerovnia <nerv@i.ua>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rightsoftend/meta-market-enterprise/issues"
+  },
+  "homepage": "https://github.com/rightsoftend/meta-market-enterprise#readme"
+}
