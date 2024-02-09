@@ -8,7 +8,7 @@
   },
   "engines": {
     "node": "18 || 19 || 20"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rightsoftend/meta-market-enterprise.git"
@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/rightsoftend/meta-market-enterprise/issues"
   },
-  "homepage": "https://github.com/rightsoftend/meta-market-enterprise#readme"
+  "homepage": "https://github.com/rightsoftend/meta-market-enterprise#readme",
+  "dependencies": {
+    "impress": "^3.0.13",
+    "metasql": "3.0.0-alpha.2",
+    "pg": "^8.11.3"
+  }
 }
